@@ -58,7 +58,7 @@ function renderCards() {
       btn.addEventListener('click', () => {
         const pptType = encodeURIComponent(entry.pptsname);
         sessionStorage.setItem('selectedPPT', pptType);
-        const url = '/vjthappt.html';
+        const url = 'vjthappt.html';
         window.location.href = url;
       });
     }
