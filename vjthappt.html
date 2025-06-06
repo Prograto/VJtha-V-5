@@ -160,9 +160,8 @@
       alert("Invalid User");
       window.location.href = "index.html";
   }
-  const params = new URLSearchParams(window.location.search);
 
-  const ppttype = params.get('ppttype');
+  const ppttype = sessionStorage.getItem('selectedPPT');
 
   console.log('ppttype:', ppttype);
 
